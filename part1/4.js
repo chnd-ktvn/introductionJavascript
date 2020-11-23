@@ -1,5 +1,5 @@
 let newData = {
-  name: "Chandra Oktaviani", email: "candraoktaviani2017@gmail.com", 
+  names: "Chandra Oktaviani", email: "candraoktaviani2017@gmail.com", 
   hobby: ["reading novel", "watching anime"]
 }
 
@@ -8,7 +8,7 @@ let data = {
   name: "Leanne Graham",
   username : "Bret",
   email: "Sincere@april.biz",
-  ...newData,
+  
   address:{
     street: "Kulas Light",
     suite: 'Apt. 556',
@@ -18,6 +18,8 @@ let data = {
   phone: "1-770-736-8031 x56442",
   website: 'hildegard.org'
 }
+data = {...data, ...newData} 
+
 console.log(data);
 
 const{street: localeStreet,city: localeCity} = data.address;
