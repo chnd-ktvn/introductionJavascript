@@ -33,4 +33,5 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray){
         console.log("Dimohon untuk menggunakan tipe data yang benar!");
     }
 }
-seleksiNilai( 5, 20, [8, 17, 30, 5, 6, 7])
+seleksiNilai( 5, 20, [21, 29, 30, 22, 24, 27, 26]);
+//5, 20, [8, 17, 30, 5, 6, 7, 4]

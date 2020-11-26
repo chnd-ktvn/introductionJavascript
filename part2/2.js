@@ -34,7 +34,7 @@ function showName(num, hasil){
         for(let x = 0; x < num; x++){
             hasilAkhir.push(hasil[x]);
         }
-        console.log(hasilAkhir); // tdnya hasil2
+        console.log(hasilAkhir);
     }
 }
 searchName("a", 3, showName);
