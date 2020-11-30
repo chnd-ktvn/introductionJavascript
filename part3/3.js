@@ -2,7 +2,7 @@ const pangkat2 = () => {
     return new Promise(resolve => {
         setTimeout(() => {
             let hasil = 2 * 2
-            resolve(`Hasil 2 pangkat 1 = ${hasil}`)
+            resolve(`Hasil 2 pangkat 2 = ${hasil}`)
         }, 3000)
     })
 }
@@ -79,7 +79,7 @@ function berangkatCileunyi(){
     return new Promise((resolve, reject) =>{
         if(keadaanMobil.bensin >= keadaanMobil.cileunyi){
             keadaanMobil.bensin -= keadaanMobil.cileunyi
-            resolve(`Selamat! Anda sudah sampai tujuan.`)
+            resolve(`Selamat! Anda sudah sampai tujuan.`)// cileunyi itu bandung
         } else{
             reject(`Anda tidak bisa melanjutkan perjalanan ke gerbang tol cileunyi. Sisa bensin Anda ${keadaanMobil.bensin} liter.`)
         }
@@ -103,4 +103,4 @@ function perjalananBekasiBandung(liter){
     .then((resolved) => console.log(resolved))
     .catch((rejected) => console.log(rejected))
 }
-perjalananBekasiBandung(true);
+perjalananBekasiBandung(19);
